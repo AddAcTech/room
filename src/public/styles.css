@@ -31,38 +31,39 @@ article {
 }
 
 .card {
-  width: 200px;
+  width: 300px;
   height: 300px;
   background-color: #d97136;
-  border-radius: 20px;
-  box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
+  border-radius: 100%;
+  box-shadow: 0px 10px 30px -5px rgba(211, 109, 0, 0.848);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 30px;
-}
-
-.card p {
-  font-weight: bold;
-  font-size: large;
-  color: white;
 }
 
 .thermometer {
-  width: 60px;
-  height: 200px;
-  color: #d97136;
-  border-radius: 30px;
-  background-color: #ffff;
-  position: relative;
-  overflow: hidden;
+  width: 280px;
+  height: 280px;
+  color: #ffff;
+  border-radius: 100%;
+  border-color: #80421e;
+  border-style: solid;
+  border-width: 2px;
+  background-color: #d97136;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column-reverse;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
+}
+
+.thermometer p {
+  padding: 5px;
+  font-weight: bold;
+  border-top-color: white;
+  border-top-style: solid;
+  border-width: 3px;
 }
 
 .icon {
