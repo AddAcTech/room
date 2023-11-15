@@ -1,0 +1,76 @@
+body {
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  background: rgb(6, 21, 30);
+  background: linear-gradient(
+    90deg,
+    rgba(6, 21, 30, 1) 0%,
+    rgba(11, 40, 55, 1) 50%
+  );
+}
+
+article {
+  color: #ffff;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.titulo {
+  color: white;
+  width: 50%;
+  font-size: x-large;
+  text-align: start;
+}
+
+.card {
+  border-radius: 5%;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: max-content;
+  background-color: #b45822;
+  padding: 15px;
+  gap: 10px;
+}
+
+.card p {
+  font-weight: bold;
+  font-size: large;
+  color: white;
+}
+
+.termometer {
+  color: #d97136;
+  border-radius: 15%;
+  min-height: 100px;
+  width: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  background-color: #ffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.icon {
+  border-radius: 100%;
+  background-color: bisque;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    font-size: medium;
+    flex-direction: column-reverse;
+    height: auto;
+    padding-top: 30px;
+  }
+}

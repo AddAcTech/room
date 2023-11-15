@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Proyecto instrumentacion</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <section class="titulo">
+        <h1>Sensor de temperatura con PT-100, AD620, ADC0804 y Arduino UNO.</h1>
+        <p>Aguilar Chavez Alexis Daniel</p>
+        <p>Olvera Olvera Oliver Jesus</p>
+        <p>Alejandro</p>
+      </section>
+
+      <section class="card">
+        <p>Temperatura Actual</p>
+        <div class="termometer">
+          <h2 id="temperature">asd</h2>
+        </div>
+        <div class="icon" id="icon"></div>
+      </section>
+    </div>
+
+    <article>
+      <h2>¿Como funciona?</h2>
+      <p>
+        En este proyecto se usa un sensor PT-100 acondicionado con un puente de
+        Wheatstone, el voltaje de salida se manda a un ad620 para amplificar los
+        valores de salida, esa salida es enviada a un convertidor analogio
+        digital (ADC0804) para despues leer los bits de salida mediante un
+        arduino UNO que esta programado para convertir los valores digitales
+        leidos a una temperatura equivalente, estos valores de temperatura se
+        envian al monitor Serial que despues es leido con web sockets, y esa
+        informacion es mandada a un servidor creado con express.
+      </p>
+    </article>
+
+    <article>
+      <h2>Diagrama electronico:</h2>
+    </article>
+
+    <article>
+      <h2>¿Como implementarlo?</h2>
+      <ol>
+        <li>Armar el circuito.</li>
+        <li>Conectar y cargar codigo de Arduino.</li>
+        <li>
+          Iniciar el servidor de express con el comando "node index.js" ubicado
+          en el directorio src.
+        </li>
+      </ol>
+    </article>
+
+    <section>
+      <h2>Codigo fuente</h2>
+      <p>
+        Podras encontrar el codigo fuente para crear este proyecto tú mismo en
+        el siguiente enlace <a href="">link</a>
+      </p>
+    </section>
+
+    <script src="/socket.io/socket.io.js" charset="UTF-8"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
